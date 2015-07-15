@@ -25,7 +25,6 @@ public class GameUtilityTest {
 
 		Properties result = GameUtility.loadGameElements(propertyFile);
 
-		// add additional test code here
 		assertNotNull(result);
 		assertEquals(16, result.size());
 	}
