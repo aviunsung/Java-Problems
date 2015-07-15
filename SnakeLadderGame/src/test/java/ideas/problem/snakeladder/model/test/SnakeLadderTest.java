@@ -1,16 +1,13 @@
 package ideas.problem.snakeladder.model.test;
 
+import static org.junit.Assert.assertNotNull;
+import ideas.problem.snakeladder.model.SnakeLadder;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import ideas.problem.snakeladder.model.Player;
-
 import java.util.Properties;
 
-import org.junit.*;
-
-import ideas.problem.snakeladder.model.SnakeLadder;
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 /**
  * @author Avinash Pandey
@@ -71,54 +68,6 @@ public class SnakeLadderTest {
 
 		fixture.endGame();
 
-	}
-
-	/**
-	 * Run the void playGame() method test.
-	 *
-	 * @throws Exception
-	 *
-	 */
-	@Test(expected = NullPointerException.class)
-	public void testPlayGame_1()
-		throws Exception {
-		SnakeLadder fixture = new SnakeLadder();
-
-		fixture.playGame();
-	}
-
-
-	/**
-	 * Run the boolean rollsDice(Player) method test.
-	 *
-	 * @throws Exception
-	 *
-	 */
-	@Test(expected = NullPointerException.class)
-	public void testRollsDice_1()
-		throws Exception {
-		SnakeLadder fixture = new SnakeLadder();
-		Player player = new Player("Player-1");
-		player.setCurrentPointer(1);
-
-		boolean result = fixture.rollsDice(player);
-		assertTrue(result);
-	}
-
-	/**
-	 * Run the void snakeLadderCheck(Player) method test.
-	 *
-	 * @throws Exception
-	 *
-	 */
-	@Test(expected = NullPointerException.class)
-	public void testSnakeLadderCheck_1()
-		throws Exception {
-		SnakeLadder fixture = new SnakeLadder();
-		Player player = new Player("");
-		player.setCurrentPointer(1);
-
-		fixture.snakeLadderCheck(player);
 	}
 
 	/**
