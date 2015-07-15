@@ -39,7 +39,6 @@ public class SnakeLadderTest {
 		Map<String, Integer> gameElements = new HashMap<String, Integer>();
 		fixture.addGameElements(properties, propKey, gameElements);
 	}
-
 	/**
 	 * Run the void defineRules() method test.
 	 *
